@@ -7933,17 +7933,3 @@
 > Building 83% > :bootRunDEBUG org.grails.spring.beans.factory.OptimizedAutowireCapableBeanFactory - Returning cached instance of singleton bean 'grailsApplication'
 > Building 83% > :bootRunGrails application running at http://localhost:8080
 > Building 83% > :bootRun
->
-
-
-> Building 83% > :bootRunERROR org.grails.web.errors.GrailsExceptionResolver - NullPointerException occurred when processing request: [GET] /test/hoge
-> Building 83% > :bootRunStacktrace follows:
-> Building 83% > :bootRunjava.lang.NullPointerException: null
-> Building 83% > :bootRun       at grails301.domain.save.npe.TestController$__tt__hoge_closure55.doCall(TestController.groovy:20) ~[main/:na]
-> Building 83% > :bootRun       at grails301.domain.save.npe.TestController.$tt__hoge(TestController.groovy:18) ~[main/:na]
-> Building 83% > :bootRun       at grails.transaction.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:93) ~[grails-core-3.0.1.jar:3.0.1]
-> Building 83% > :bootRun       at grails.transaction.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:90) ~[grails-core-3.0.1.jar:3.0.1]
-> Building 83% > :bootRun       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_80]
-> Building 83% > :bootRun       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_80]
-> Building 83% > :bootRun       at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
->

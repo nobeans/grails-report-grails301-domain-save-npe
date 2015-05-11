@@ -7940,21 +7940,3 @@
 > Building 83% > :bootRunDEBUG org.grails.spring.beans.factory.OptimizedAutowireCapableBeanFactory - Returning cached instance of singleton bean 'grailsApplication'
 > Building 83% > :bootRunDEBUG org.grails.spring.beans.factory.OptimizedAutowireCapableBeanFactory - Returning cached instance of singleton bean 'grailsApplication'
 > Building 83% > :bootRun
->
-
-
-
-    def hoge() {
-        render text: [
-            new Book(),
-            new Author(),
-            new Zombie(),
-        ].collect { d ->
-            d.save(flush: true)
-            "OK: ${d.class}: ${d.errors}"
-        }.join("<br>")
-    }
-
-OK: class grails301.domain.save.npe.Book: grails.validation.ValidationErrors: 1 errors Field error in object 'grails301.domain.save.npe.Book' on field 'title': rejected value [null]; codes [grails301.domain.save.npe.Book.title.nullable.error.grails301.domain.save.npe.Book.title,grails301.domain.save.npe.Book.title.nullable.error.title,grails301.domain.save.npe.Book.title.nullable.error.java.lang.String,grails301.domain.save.npe.Book.title.nullable.error,book.title.nullable.error.grails301.domain.save.npe.Book.title,book.title.nullable.error.title,book.title.nullable.error.java.lang.String,book.title.nullable.error,grails301.domain.save.npe.Book.title.nullable.grails301.domain.save.npe.Book.title,grails301.domain.save.npe.Book.title.nullable.title,grails301.domain.save.npe.Book.title.nullable.java.lang.String,grails301.domain.save.npe.Book.title.nullable,book.title.nullable.grails301.domain.save.npe.Book.title,book.title.nullable.title,book.title.nullable.java.lang.String,book.title.nullable,nullable.grails301.domain.save.npe.Book.title,nullable.title,nullable.java.lang.String,nullable]; arguments [title,class grails301.domain.save.npe.Book]; default message [[{1}]クラスのプロパティ[{0}]にnullは許可されません。]
-OK: class grails301.domain.save.npe.Author: grails.validation.ValidationErrors: 1 errors Field error in object 'grails301.domain.save.npe.Author' on field 'name': rejected value [null]; codes [grails301.domain.save.npe.Author.name.nullable.error.grails301.domain.save.npe.Author.name,grails301.domain.save.npe.Author.name.nullable.error.name,grails301.domain.save.npe.Author.name.nullable.error.java.lang.String,grails301.domain.save.npe.Author.name.nullable.error,author.name.nullable.error.grails301.domain.save.npe.Author.name,author.name.nullable.error.name,author.name.nullable.error.java.lang.String,author.name.nullable.error,grails301.domain.save.npe.Author.name.nullable.grails301.domain.save.npe.Author.name,grails301.domain.save.npe.Author.name.nullable.name,grails301.domain.save.npe.Author.name.nullable.java.lang.String,grails301.domain.save.npe.Author.name.nullable,author.name.nullable.grails301.domain.save.npe.Author.name,author.name.nullable.name,author.name.nullable.java.lang.String,author.name.nullable,nullable.grails301.domain.save.npe.Author.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class grails301.domain.save.npe.Author]; default message [[{1}]クラスのプロパティ[{0}]にnullは許可されません。]
-OK: class grails301.domain.save.npe.Zombie: grails.validation.ValidationErrors: 1 errors Field error in object 'grails301.domain.save.npe.Zombie' on field 'name': rejected value [null]; codes [grails301.domain.save.npe.Zombie.name.nullable.error.grails301.domain.save.npe.Zombie.name,grails301.domain.save.npe.Zombie.name.nullable.error.name,grails301.domain.save.npe.Zombie.name.nullable.error.java.lang.String,grails301.domain.save.npe.Zombie.name.nullable.error,zombie.name.nullable.error.grails301.domain.save.npe.Zombie.name,zombie.name.nullable.error.name,zombie.name.nullable.error.java.lang.String,zombie.name.nullable.error,grails301.domain.save.npe.Zombie.name.nullable.grails301.domain.save.npe.Zombie.name,grails301.domain.save.npe.Zombie.name.nullable.name,grails301.domain.save.npe.Zombie.name.nullable.java.lang.String,grails301.domain.save.npe.Zombie.name.nullable,zombie.name.nullable.grails301.domain.save.npe.Zombie.name,zombie.name.nullable.name,zombie.name.nullable.java.lang.String,zombie.name.nullable,nullable.grails301.domain.save.npe.Zombie.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class grails301.domain.save.npe.Zombie]; default message [[{1}]クラスのプロパティ[{0}]にnullは許可されません。]
