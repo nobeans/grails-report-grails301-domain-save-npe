@@ -5,5 +5,6 @@ class Book {
     String title
 
     static constraints = {
+        title maxSize: 5
     }
 }
